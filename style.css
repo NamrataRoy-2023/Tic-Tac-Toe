@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* .main{
+    background: url('../images/background.png') no-repeat center;
+} */
+.background{
+    height: 100vh;
+    width: 100%;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav{
+    position: fixed;
+    top: 0%;
+    background-color: transparent;
+    color: aliceblue;
+    height: 3vh;
+    font-size: 50px;
+    display: block;
+    align-items: center;
+    padding-left: 4vw;
+    /* font-family: 'Rowdies', cursive; */
+
+}
+
+
+
+.gameContainer{
+    position: fixed;
+    display: flex;
+    
+    top: 20vh;
+    left: 5vw;
+    /* justify-content: center; */
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Rowdies', cursive; 
+}
+
+.box{
+    cursor: pointer;
+    border: 3px solid whitesmoke;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxtext{
+    color: whitesmoke;
+}
+
+.line{
+    background-color: rgb(20, 186, 20);
+    width: 0;
+    height: 12px;
+    border-radius: 10px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+
+.gameInfo{
+    position: fixed;
+    display: flex;
+    top: 20vh;
+    padding-left: 50vw;
+    font-family: 'Rowdies', cursive;
+    color: whitesmoke;
+}
+.heading{
+    text-decoration: underline;
+}
+.info{
+    margin-top: 10vh;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    font-size: 30px;
+}
+
+.button{
+    display: flex;
+    position: fixed;
+    margin-top: 48vh;
+    margin-left: 6vw;
+}
+
+
+.imgbox img{
+    position: fixed;
+    display: flex;
+    margin-top: 16vh;
+    margin-left: 4vw;
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+@media screen and (max-width: 800px)
+{
+.gameInfo,.gif,.button,.info{
+    flex-wrap: wrap;
+}
+}
